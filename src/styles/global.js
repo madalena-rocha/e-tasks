@@ -1,10 +1,19 @@
 import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREAKPOINTS } from "./deviceBreakpoints";
 
 export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  :root {
+    font-size: 16px;
+    
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+      font-size: 12px;
+    }
   }
 
   body {
@@ -16,7 +25,7 @@ export default createGlobalStyle`
 
   body, input, button, textarea {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem; // o rem utiliza o tamanho de fonte do elemento-raiz como referência, enquanto o em utiliza o elemento pai como referência
     outline: none;
   }
 
