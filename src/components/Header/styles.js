@@ -12,6 +12,6 @@ export const Container = styled.header`
   border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_500};
 
   > h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 `;
