@@ -14,6 +14,12 @@ export const Container = styled.aside`
     grid-area: none;
     position: absolute;
     z-index: 1;
+    
+    display: none;
+
+    &[data-menu-is-open="true"] {
+      display: block;
+    }
   }
 `;
 
