@@ -15,10 +15,11 @@ export const Container = styled.aside`
     position: absolute;
     z-index: 1;
     
-    display: none;
+    transform: translateX(-100%); // jogar 100% para fora da tela
+    transition: transform 0.3s ease-in-out;
 
     &[data-menu-is-open="true"] {
-      display: block;
+      transform: translateX(0);
     }
   }
 `;
