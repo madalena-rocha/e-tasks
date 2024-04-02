@@ -15,7 +15,7 @@ export const Container = styled.a`
     opacity: 0.5;
   `};
 
-  > svg {
+  svg {
     font-size: 1.5rem;
     color: ${({ theme }) => theme.COLORS.GRAY_400};
 
@@ -40,3 +40,5 @@ export const Details = styled.div`
     color: ${({ theme }) => theme.COLORS.GRAY_400};
   }
 `;
+
+export const PushPin = styled.div``;
